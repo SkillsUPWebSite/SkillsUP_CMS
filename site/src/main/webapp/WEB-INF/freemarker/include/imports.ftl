@@ -1,4 +1,5 @@
-<%--
+<#ftl encoding="UTF-8">
+<#--
   Copyright 2014 Hippo B.V. (http://www.onehippo.com)
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,20 +13,8 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  --%>
+-->
+<#assign hst=JspTaglibs["http://www.hippoecm.org/jsp/hst/core"] >
+<#assign fmt=JspTaglibs ["http://java.sun.com/jsp/jstl/fmt"] >
 
-<!doctype html>
-<%@ include file="/WEB-INF/jspf/htmlTags.jspf" %>
-<%@ page isErrorPage="true" %>
-<% response.setStatus(404); %>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <title>404 error</title>
-</head>
-<body>
-<h1>Page not found!!!</h1>
-<p>The page you requested was not found in this site.</p>
-</body>
-</html>
+<@hst.defineObjects />
