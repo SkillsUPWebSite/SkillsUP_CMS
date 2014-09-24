@@ -37,27 +37,27 @@
 
 
        
-        <a name = "1"> 1 </a>
-        <div id = "div_1"> baner </div>
+        <a name = "1"></a>
+        <div id = "div_1"> Theme 1 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
        
-        <a name = "2"> 2 </a>
-        <div id = "div_2"> baner </div>
+        <a name = "2"></a>
+        <div id = "div_2"> Theme 2 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
  
-        <a name = "3"> 3 </a>
-        <div id = "div_3"> baner </div>
+        <a name = "3"></a>
+        <div id = "div_3"> Theme 3 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         
-        <a name = "4"> 4 </a>
-        <div id = "div_4"> baner </div>
+        <a name = "4"></a>
+        <div id = "div_4"> Theme 4 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         
-        <a name = "5"> 5 </a>
-        <div id = "div_5"> baner </div>
+        <a name = "5"></a>
+        <div id = "div_5"> Theme 5 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         
-        <a name = "6"> 6 </a>
-        <div id = "div_6"> baner </div>
+        <a name = "6"></a>
+        <div id = "div_6"> Theme 6 </div>
 
 <@hst.include ref="container"/>
