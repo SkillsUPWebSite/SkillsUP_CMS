@@ -16,6 +16,7 @@
 -->
 
 <@hst.setBundle basename="essentials.homepage"/>
+<div>Hello</div>
 <div>
   <h1><@fmt.message key="homepage.title"/></h1>
   <p><@fmt.message key="homepage.text"/></p>
