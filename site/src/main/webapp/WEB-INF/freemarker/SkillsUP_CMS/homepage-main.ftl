@@ -14,12 +14,15 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
- <button class="btn-link"  onclick =" location.href = '#1';">ref 1</button>
-        <button class="btn-link"  onclick =" location.href = '#2';">ref 2</button>
-        <button class="btn-link"  onclick =" location.href = '#3';">ref 3</button>
-        <button class="btn-link"  onclick =" location.href = '#4';">ref 4</button>
-        <button class="btn-link"  onclick =" location.href = '#5';">ref 5</button>
-        <button class="btn-link"  onclick =" location.href = '#6';">ref 6</button>
+            <ul class="pagination">
+
+                <li><a href="#1">Theme 1</a></li>
+                <li><a href="#2">Theme 2</a></li>
+                <li><a href="#3">Theme 3</a></li>
+                <li><a href="#4">Theme 4</a></li>
+                <li><a href="#5">Theme 5</a></li>
+                <li><a href="#6">Theme 6</a></li>
+            </ul>
 
 <@hst.setBundle basename="essentials.homepage"/>
 
