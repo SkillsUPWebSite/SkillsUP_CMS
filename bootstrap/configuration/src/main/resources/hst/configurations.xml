@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sv:node sv:name="hst:configurations" xmlns:sv="http://www.jcp.org/jcr/sv/1.0">
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="hst:configurations">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>hst:configurations</sv:value>
   </sv:property>
@@ -11,21 +10,254 @@
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:sitemap</sv:value>
       </sv:property>
+      <sv:node sv:name="sitemap.xml">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:sitemapitem</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:componentconfigurationid" sv:type="String">
+          <sv:value>hst:components/forge-sitemap-feed</sv:value>
+        </sv:property>
+      </sv:node>
     </sv:node>
     <sv:node sv:name="hst:pages">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:pages</sv:value>
       </sv:property>
+      <sv:node sv:name="robotstxt">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:componentclassname" sv:type="String">
+          <sv:value>org.onehippo.forge.robotstxt.components.RobotstxtComponent</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:template" sv:type="String">
+          <sv:value>robotstxt.ftl</sv:value>
+        </sv:property>
+      </sv:node>
     </sv:node>
     <sv:node sv:name="hst:components">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:components</sv:value>
       </sv:property>
+      <sv:node sv:name="forge-news-sitemap-feed">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:componentclassname" sv:type="String">
+          <sv:value>org.onehippo.forge.sitemap.components.NewsSitemapFeed</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:parameternames" sv:type="String" sv:multiple="true">
+          <sv:value>publicationDateProperty</sv:value>
+          <sv:value>documentTypes</sv:value>
+          <sv:value>propertyCriteria</sv:value>
+          <sv:value>timezone</sv:value>
+          <sv:value>publicationName</sv:value>
+          <sv:value>publicationLanguage</sv:value>
+          <sv:value>newsInformationProvider</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:parametervalues" sv:type="String" sv:multiple="true">
+          <sv:value>${publicationDateProperty}</sv:value>
+          <sv:value>${documentTypes}</sv:value>
+          <sv:value>${propertyCriteria}</sv:value>
+          <sv:value>${timezone}</sv:value>
+          <sv:value>${publicationName}</sv:value>
+          <sv:value>${publicationLanguage}</sv:value>
+          <sv:value>${newsInformationProvider}</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:template" sv:type="String">
+          <sv:value>forge-sitemap-feed.ftl</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="forge-sitemap-based-on-hst-configuration-feed">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:componentclassname" sv:type="String">
+          <sv:value>org.onehippo.forge.sitemap.components.SitemapFeedBasedOnHstSitemap</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:parameternames" sv:type="String" sv:multiple="true">
+          <sv:value>sitemapRefIdExclusions</sv:value>
+          <sv:value>splitter-enabled</sv:value>
+          <sv:value>splitter-destination-foldername</sv:value>
+          <sv:value>informationProvider</sv:value>
+          <sv:value>sitemapComponentConfigurationIdExclusions</sv:value>
+          <sv:value>sitemapPathExclusions</sv:value>
+          <sv:value>write-to-repository</sv:value>
+          <sv:value>amountOfWorkers</sv:value>
+          <sv:value>output-mode</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:parametervalues" sv:type="String" sv:multiple="true">
+          <sv:value>${sitemapRefIdExclusions}</sv:value>
+          <sv:value>${splitter-enabled}</sv:value>
+          <sv:value>${splitter-destination-foldername}</sv:value>
+          <sv:value>${informationProvider}</sv:value>
+          <sv:value>${sitemapComponentConfigurationIdExclusions}</sv:value>
+          <sv:value>${sitemapPathExclusions}</sv:value>
+          <sv:value>${write-to-repository}</sv:value>
+          <sv:value>${amountOfWorkers}</sv:value>
+          <sv:value>${output-mode}</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:template" sv:type="String">
+          <sv:value>forge-sitemap-feed.ftl</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="forge-sitemap-feed">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:componentclassname" sv:type="String">
+          <sv:value>org.onehippo.forge.sitemap.components.SitemapFeed</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:template" sv:type="String">
+          <sv:value>forge-sitemap-feed.ftl</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="forge-sitemap-index-feed">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:componentclassname" sv:type="String">
+          <sv:value>org.onehippo.forge.sitemap.components.SitemapIndexFeed</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:parameternames" sv:type="String" sv:multiple="true">
+          <sv:value>sitemap-location-foldername</sv:value>
+          <sv:value>assets-url-prefix</sv:value>
+          <sv:value>additional-sitemap-file-url</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:parametervalues" sv:type="String" sv:multiple="true">
+          <sv:value>${sitemap-location-foldername}</sv:value>
+          <sv:value>${assets-url-prefix}</sv:value>
+          <sv:value>${additional-sitemap-file-url}</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:template" sv:type="String">
+          <sv:value>forge-sitemap-feed.ftl</sv:value>
+        </sv:property>
+      </sv:node>
     </sv:node>
     <sv:node sv:name="hst:templates">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:templates</sv:value>
       </sv:property>
+      <sv:node sv:name="forge-sitemap-feed.ftl">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:template</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:script" sv:type="String">
+          <sv:value>${sitemap}</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="robotstxt.ftl">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:template</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:script" sv:type="String">
+          <sv:value>&lt;#ftl encoding="UTF-8" strip_whitespace=true attributes={"content_type": "text/plain"}&gt;
+&lt;#assign hst=JspTaglibs["http://www.hippoecm.org/jsp/hst/core"] &gt;
+&lt;#if document?? &amp;&amp; document.sections??&gt;
+    &lt;#list document.sections as section&gt;
+        &lt;#if section.userAgent?? &amp;&amp; (section.disallows?? || disallowedFacNavLinks??)&gt;
+User-agent: ${section.userAgent}
+&lt;#list section.disallows as path&gt;Disallow: ${path}
+&lt;/#list&gt;
+&lt;#list disallowedFacNavLinks as facnav&gt;Disallow: &lt;@hst.link link=facnav/&gt;
+&lt;/#list&gt;
+
+        &lt;/#if&gt;
+    &lt;/#list&gt;
+&lt;/#if&gt;</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="poll.component.ftl">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:template</sv:value>
+        </sv:property>
+        <sv:property sv:name="hst:script" sv:type="String">
+          <sv:value>&lt;#assign hst=JspTaglibs["http://www.hippoecm.org/jsp/hst/core"]&gt;
+
+&lt;div id="poll"&gt;
+  &lt;#if pollDocument??&gt;
+    &lt;#if pollDocument.poll.text??&gt;
+      &lt;h3&gt;${pollDocument.poll.text}&lt;/h3&gt;
+    &lt;/#if&gt;
+    &lt;span id="noCookieSupportMessage"&gt;The poll cannot be shown because the browser does not support cookies&lt;/span&gt;
+
+    &lt;#-- Render Poll Form if not yet voted (voteSuccess not defined) or voting failed (voteSuccess is false) --&gt;
+    &lt;#if !(voteSuccess??) || voteSuccess == false&gt;
+      &lt;div id="pollDiv"&gt;
+        &lt;#if pollDocument.poll.introduction??&gt;
+          &lt;p id=""&gt;${pollDocument.poll.introduction}&lt;/p&gt;
+        &lt;/#if&gt;
+
+        &lt;!-- The Poll --&gt;
+        &lt;form id="form-poll" method="post" action="&lt;@hst.actionURL /&gt;"&gt;
+          &lt;input type="hidden" name="path" value="${path}"/&gt;
+          &lt;div&gt;
+            &lt;#list pollDocument.poll.options as curOption&gt;
+              &lt;div&gt;
+                &lt;input id="${curOption.value}" name="option" type="radio" value="${curOption.value}"
+                       &lt;#if option?? &amp;&amp; curOption == option&gt;selected="true"&lt;/#if&gt; /&gt;
+                &lt;label for="${curOption.value}"&gt;${curOption.label}&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/#list&gt;
+          &lt;/div&gt;
+          &lt;button class="submit" type="submit"&gt;Vote&lt;/button&gt;
+          &lt;#if voteSuccess??&gt; &lt;#-- Implies voteSuccess == "false" --&gt;
+            &lt;div&gt;Sorry, processing the vote has failed&lt;/div&gt;
+          &lt;/#if&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/#if&gt;
+
+    &lt;ul id="pollResults" class="poll-results-list"&gt;
+      &lt;#list pollVotes.options as curOption&gt;
+        &lt;li&gt;
+          &lt;div class="poll-graph-bar"&gt;
+            &lt;span class="poll-meter" style="width: ${curOption.votesPercentage}%"&gt; &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;#if curOption.votesCount == 1&gt;
+            ${curOption.label} - ${curOption.votesPercentage}% (${curOption.votesCount} vote)
+          &lt;#else&gt;
+            ${curOption.label} - ${curOption.votesPercentage}% (${curOption.votesCount} votes)
+          &lt;/#if&gt;
+        &lt;/li&gt;
+      &lt;/#list&gt;
+      &lt;#if pollVotes.totalVotesPercentage != 100&gt;
+	      &lt;li&gt;
+	     	Due to rounding the percentages don't add up to 100%
+	      &lt;/li&gt;
+	  &lt;/#if&gt;
+    &lt;/ul&gt;
+
+    &lt;script  type="text/javascript"&gt;
+      if (&lt;#if voteSuccess?? &amp;&amp; voteSuccess == true&gt;1&lt;#else&gt;0&lt;/#if&gt;) {
+        hide("noCookieSupportMessage");
+      } else if (checkBrowserSupportsCookies()) {
+        hide("noCookieSupportMessage");
+        hide("pollResults");
+      } else {
+        hide("pollDiv");
+        hide("pollResults");
+      }
+
+      function hide(id) {
+        var element = document.getElementById(id);
+        element.parentNode.removeChild(element);
+      }
+
+      function checkBrowserSupportsCookies() {
+        var cookieDate=new Date();
+        var cookieString="testCookieSupport"+cookieDate.toUTCString();
+        document.cookie="testCookieSupport="+cookieString;
+        return document.cookie.length &gt; 0;
+      }
+    &lt;/script&gt;
+
+  &lt;#else&gt;
+    No active poll available
+  &lt;/#if&gt;
+&lt;/div&gt;</sv:value>
+        </sv:property>
+      </sv:node>
     </sv:node>
     <sv:node sv:name="hst:sitemenus">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -35,11 +267,6 @@
     <sv:node sv:name="hst:sitemapitemhandlers">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:sitemapitemhandlers</sv:value>
-      </sv:property>
-    </sv:node>
-    <sv:node sv:name="hst:catalog">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>hst:catalog</sv:value>
       </sv:property>
     </sv:node>
   </sv:node>
@@ -61,7 +288,7 @@
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:workspace</sv:value>
       </sv:property>
-      <sv:node sv:name="hst:containers" xmlns:sv="http://www.jcp.org/jcr/sv/1.0">
+      <sv:node sv:name="hst:containers">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>hst:containercomponentfolder</sv:value>
         </sv:property>
@@ -102,7 +329,7 @@
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hst:configuration</sv:value>
     </sv:property>
-    <sv:property sv:multiple="true" sv:name="hst:inheritsfrom" sv:type="String">
+    <sv:property sv:name="hst:inheritsfrom" sv:type="String" sv:multiple="true">
       <sv:value>../common</sv:value>
     </sv:property>
   </sv:node>
@@ -110,5 +337,58 @@
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hst:configuration</sv:value>
     </sv:property>
+  </sv:node>
+  <sv:node sv:name="ya.ru">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:configuration</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:inheritsfrom" sv:type="String" sv:multiple="true">
+      <sv:value>../SkillsUP_CMS-subsite-common</sv:value>
+    </sv:property>
+    <sv:node sv:name="hst:workspace">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hst:workspace</sv:value>
+      </sv:property>
+      <sv:node sv:name="hst:sitemap">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:sitemap</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="hst:pages">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:pages</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="hst:sitemenus">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:sitemenus</sv:value>
+        </sv:property>
+        <sv:node sv:name="main">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>hst:sitemenu</sv:value>
+          </sv:property>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="hst:containers">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hst:containercomponentfolder</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="hst:sitemap">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hst:sitemap</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="hst:abstractpages">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hst:pages</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="hst:pages">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hst:pages</sv:value>
+      </sv:property>
+    </sv:node>
   </sv:node>
 </sv:node>

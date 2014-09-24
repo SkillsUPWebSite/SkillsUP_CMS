@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sv:node sv:name="hst:channels" xmlns:sv="http://www.jcp.org/jcr/sv/1.0">
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="hst:channels">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>hst:channels</sv:value>
   </sv:property>
@@ -13,15 +12,51 @@
     <sv:property sv:name="hst:name" sv:type="String">
       <sv:value>My Hippo Project</sv:value>
     </sv:property>
-      <sv:property sv:name="hst:type" sv:type="String">
-        <sv:value>website</sv:value>
-      </sv:property>
+    <sv:property sv:name="hst:type" sv:type="String">
+      <sv:value>website</sv:value>
+    </sv:property>
     <sv:node sv:name="hst:channelinfo">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:channelinfo</sv:value>
       </sv:property>
       <sv:property sv:name="headerName" sv:type="String">
         <sv:value>HST Website</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="ya.ru">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:channel</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:channelinfoclass" sv:type="String">
+      <sv:value>ua.skillsup.skillsup_cms.channels.SubsiteInfo</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:defaultdevice" sv:type="String">
+      <sv:value>default</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:devices" sv:type="String" sv:multiple="true"/>
+    <sv:property sv:name="hst:lastmodified" sv:type="Date">
+      <sv:value>2014-09-24T16:59:33.842+04:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:lastmodifiedby" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:lockedby" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:lockedon" sv:type="Date">
+      <sv:value>2014-09-24T16:59:33.841+04:00</sv:value>
+    </sv:property>
+    
+    <sv:property sv:name="hst:type" sv:type="String">
+      <sv:value>website</sv:value>
+    </sv:property>
+    <sv:node sv:name="hst:channelinfo">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>hst:channelinfo</sv:value>
+      </sv:property>
+      <sv:property sv:name="headerName" sv:type="String">
+        <sv:value>HST Subsite</sv:value>
       </sv:property>
     </sv:node>
   </sv:node>
