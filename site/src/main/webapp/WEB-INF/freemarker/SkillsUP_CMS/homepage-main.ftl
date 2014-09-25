@@ -14,6 +14,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
+
+ <#-- topMenu  -->
  <a name = "up"></a>
             <ul class="pagination">
 
@@ -24,20 +26,26 @@
                 <li><a href="#5">Theme 5</a></li>
                 <li><a href="#6">Theme 6</a></li>
             </ul>
+<#--  -->
+
+
+
+
+<#-- default  -->
 
 <@hst.setBundle basename="essentials.homepage"/>
-
 
 <div>
   <h1><@fmt.message key="homepage.title"/></h1>
   <p><@fmt.message key="homepage.text"/></p>
 </div>
+<#--   -->
 
 
 
 
 
-       
+      <#-- 	Link top menu to the sections    --> 
         <a name = "1"></a>
         <div id = "div_1"> Theme 1 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -60,7 +68,10 @@
         
         <a name = "6"></a>
         <div id = "div_6"> Theme 6 </div>
+      <#-- -->
 
+
+      <#-- button to the topMenu -->
          <div style="width: 50px;
              height: 24px;
              background: #D9DAEE;
@@ -76,5 +87,5 @@
              onclick="location.href = '#up';">
              up
          </div>
-
+    <#-- -->
 <@hst.include ref="container"/>
