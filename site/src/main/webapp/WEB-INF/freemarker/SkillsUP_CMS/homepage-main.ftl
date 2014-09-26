@@ -41,6 +41,8 @@
 </div>
 <#--   -->
 
+    <#include "/WEB-INF/freemarker/SkillsUP_CMS/image-slider.ftl">
+
 
 
 
