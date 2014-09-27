@@ -32,7 +32,11 @@
 <body>
 <div class="container">
 <#include "/WEB-INF/freemarker/SkillsUP_CMS/topMenu.ftl">
+<@buildTopMenu  values= ["Theme 1","Theme 2","Theme 3",
+"Theme 4","Theme 5","Theme 6"] />
+
 <#include "/WEB-INF/freemarker/SkillsUP_CMS/buttonUP.ftl">
+
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
         <@hst.include ref="top"/>

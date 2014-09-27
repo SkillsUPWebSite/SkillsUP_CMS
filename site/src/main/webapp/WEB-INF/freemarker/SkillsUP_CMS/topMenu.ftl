@@ -1,12 +1,12 @@
-<#-- topMenu  -->
+<#macro buildTopMenu values >
 <a name="up"></a>
-<ul class="pagination">
-
-    <li><a href="#1">Theme 1</a></li>
-    <li><a href="#2">Theme 2</a></li>
-    <li><a href="#3">Theme 3</a></li>
-    <li><a href="#4">Theme 4</a></li>
-    <li><a href="#5">Theme 5</a></li>
-    <li><a href="#6">Theme 6</a></li>
+<ul class="pagination topMenu">
+    <#assign num = 1 >
+    <#list values as v >
+        <li>
+            <a href="#${num}"> ${v} </a>
+            <#assign num = num +1 />
+        </li>
+    </#list>
 </ul>
-<#--  -->
+</#macro>
