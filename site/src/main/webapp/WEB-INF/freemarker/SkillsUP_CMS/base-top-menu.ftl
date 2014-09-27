@@ -1,4 +1,4 @@
-    <#include "/WEB-INF/freemarker/include/imports.ftl">
+<#include "/WEB-INF/freemarker/include/imports.ftl">
 <#--
   Copyright 2014 Hippo B.V. (http://www.onehippo.com)
 
@@ -17,21 +17,21 @@
 <#-- @ftlvariable name="menu" type="org.hippoecm.hst.core.sitemenu.HstSiteMenu" -->
 <#-- @ftlvariable id="editMode" type="java.lang.Boolean"-->
 <#if menu??>
-  <#if menu.siteMenuItems??>
+    <#if menu.siteMenuItems??>
     <ul class="nav nav-pills">
-      <#list menu.siteMenuItems as item>
-        <#if  item.selected || item.expanded>
-          <li class="active"><a href="<@hst.link link=item.hstLink/>">${item.name}</a></li>
-        <#else>
-          <li><a href="<@hst.link link=item.hstLink/>">${item.name}</a></li>
-        </#if>
-      </#list>
+        <#list menu.siteMenuItems as item>
+            <#if  item.selected || item.expanded>
+                <li class="active"><a href="<@hst.link link=item.hstLink/>">${item.name}</a></li>
+            <#else>
+                <li><a href="<@hst.link link=item.hstLink/>">${item.name}</a></li>
+            </#if>
+        </#list>
     </ul>
-  </#if>
-  <@hst.cmseditmenu menu=menu/>
+    </#if>
+    <@hst.cmseditmenu menu=menu/>
 <#else>
-  <#if editMode>
+    <#if editMode>
     <h5>[Menu Component]</h5>
     <sub>Click to edit Menu</sub>
-  </#if>
+    </#if>
 </#if>

@@ -18,9 +18,11 @@
         <!-- Item 1 -->
         <div class="item active">
             <img src="images/images_for_slider/1.jpg"/>
+
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Title 1</h1>
+
                     <p>Description 1</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="">Learn More</a>-->
                     </p></div>
@@ -30,21 +32,25 @@
         <!-- Item 2 -->
         <div class="item">
             <img src="images/images_for_slider/2.jpg"/>
+
             <div class="container">
                 <div class="carousel-caption">
-                <h1>Title 2</h1>
-                <p>Description 2</p>
+                    <h1>Title 2</h1>
+
+                    <p>Description 2</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="">Learn More</a>-->
-            </div>
+                </div>
             </div>
         </div>
 
         <!-- Item 3 -->
         <div class="item">
-            <img src="images/images_for_slider/3.jpg" />
+            <img src="images/images_for_slider/3.jpg"/>
+
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Title 3</h1>
+
                     <p>Description 3</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="">Learn More</a>-->
                 </div>
@@ -53,10 +59,12 @@
 
         <!-- Item 4 -->
         <div class="item">
-            <img src="images/images_for_slider/4.jpg" />
+            <img src="images/images_for_slider/4.jpg"/>
+
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Title 4</h1>
+
                     <p>Description 4</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="">Learn More</a>-->
                 </div>
@@ -65,10 +73,12 @@
 
         <!-- Item 5 -->
         <div class="item">
-            <img src="images/images_for_slider/5.jpg" />
+            <img src="images/images_for_slider/5.jpg"/>
+
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Title 5</h1>
+
                     <p>Description 5</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="">Learn More</a>-->
                 </div>
@@ -76,7 +86,6 @@
         </div>
 
     </div>
-
 
 
     <!-- Controls -->

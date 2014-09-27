@@ -1,4 +1,4 @@
-    <#include "/WEB-INF/freemarker/include/imports.ftl">
+<#include "/WEB-INF/freemarker/include/imports.ftl">
 <#--
   Copyright 2014 Hippo B.V. (http://www.onehippo.com)
 
@@ -18,6 +18,6 @@
 <@hst.setBundle basename="essentials.global"/>
 <hr></hr>
 <div class="text-center">
-  <sub><@fmt.message key="footer.text"/></sub>
+    <sub><@fmt.message key="footer.text"/></sub>
 </div>
 <@hst.include ref="container"/>

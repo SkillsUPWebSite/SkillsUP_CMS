@@ -14,7 +14,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-    <#include "/WEB-INF/freemarker/include/imports.ftl">
+<#include "/WEB-INF/freemarker/include/imports.ftl">
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -22,10 +22,10 @@
     <script type="text/javascript" src="<@hst.link path="/js/jquery-2.1.0.min.js"/>"></script>
     <script type="text/javascript" src="<@hst.link path="/js/bootstrap.min.js"/>"></script>
 
-    <@hst.defineObjects/>
-    <#if hstRequest.requestContext.cmsRequest>
-      <link rel="stylesheet" href="<@hst.link  path="/css/cms-request.css"/>" type="text/css"/>
-    </#if>
+<@hst.defineObjects/>
+<#if hstRequest.requestContext.cmsRequest>
+    <link rel="stylesheet" href="<@hst.link  path="/css/cms-request.css"/>" type="text/css"/>
+</#if>
 <@hst.headContributions categoryIncludes="componentsCss" xhtml=true/>
 <@hst.headContributions categoryIncludes="globalJavascript" xhtml=true/>
 </head>
@@ -40,10 +40,10 @@
         </div>
     </div>
     <div class="row">
-        <@hst.include ref="main"/>
+    <@hst.include ref="main"/>
     </div>
     <div class="row">
-        <@hst.include ref="footer"/>
+    <@hst.include ref="footer"/>
     </div>
 </div>
 <@hst.headContributions categoryIncludes="componentsJavascript" xhtml=true/>
