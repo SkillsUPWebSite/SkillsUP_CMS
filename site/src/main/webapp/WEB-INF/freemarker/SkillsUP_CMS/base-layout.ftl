@@ -31,6 +31,8 @@
 </head>
 <body>
 <div class="container">
+<#include "/WEB-INF/freemarker/SkillsUP_CMS/topMenu.ftl">
+<#include "/WEB-INF/freemarker/SkillsUP_CMS/buttonUP.ftl">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
         <@hst.include ref="top"/>

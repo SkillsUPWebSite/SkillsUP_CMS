@@ -15,23 +15,9 @@
   limitations under the License.
 -->
 
- <#-- topMenu  -->
- <a name = "up"></a>
-            <ul class="pagination">
-
-                <li><a href="#1">Theme 1</a></li>
-                <li><a href="#2">Theme 2</a></li>
-                <li><a href="#3">Theme 3</a></li>
-                <li><a href="#4">Theme 4</a></li>
-                <li><a href="#5">Theme 5</a></li>
-                <li><a href="#6">Theme 6</a></li>
-            </ul>
-<#--  -->
 
 
 
-
-<#-- default  -->
 
 <@hst.setBundle basename="essentials.homepage"/>
 
@@ -39,24 +25,24 @@
   <h1><@fmt.message key="homepage.title"/></h1>
   <p><@fmt.message key="homepage.text"/></p>
 </div>
-<#--   -->
-
-    <#include "/WEB-INF/freemarker/SkillsUP_CMS/image-slider.ftl">
 
 
 
 
 
-      <#-- 	Link top menu to the sections    --> 
+
+
+
+    <#-- 	Link top menu to the sections    -->
         <a name = "1"></a>
         <div id = "div_1"> Theme 1 </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <#include "/WEB-INF/freemarker/SkillsUP_CMS/image-slider.ftl">
        
         <a name = "2"></a>
         <div id = "div_2"> Theme 2 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- 
-        <a name = "3"></a>
+
+    <a name = "3"></a>
         <div id = "div_3"> Theme 3 </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         
@@ -73,21 +59,5 @@
       <#-- -->
 
 
-      <#-- button to the topMenu -->
-         <div style="width: 50px;
-             height: 24px;
-             background: #D9DAEE;
-             border-radius: 50px;
-             position: fixed;
-             bottom: 30px;
-             right: 12px;
-             text-align: center;
-             text-decoration: none;
-             font-size: 12pt;
-             color: #1A2534;
-             cursor: pointer;"  class="btn-primary  navbar" 
-             onclick="location.href = '#up';">
-             up
-         </div>
-    <#-- -->
-<@hst.include ref="container"/>
+
+    <@hst.include ref="container"/>
