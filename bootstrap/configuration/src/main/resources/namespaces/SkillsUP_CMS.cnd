@@ -1,13 +1,51 @@
 <'SkillsUP_CMS'='http://www.onehippo.org/SkillsUP_CMS/nt/1.0'>
-<'hippo'='http://www.onehippo.org/jcr/hippo/nt/2.0'>
+<'hippo'='http://www.onehippo.org/jcr/hippo/nt/2.0.4'>
 <'hippostd'='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
 <'hippostdpubwf'='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
+<'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
 
-<'hippogallery'='http://www.onehippo.org/jcr/hippogallery/nt/2.0'>
+[SkillsUP_CMS:account] > hippo:compound, hippostd:relaxed
+  orderable
 
+[SkillsUP_CMS:banner] > hippo:compound, hippostd:relaxed
+  orderable
 
+[SkillsUP_CMS:bannerA] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
 
-[SkillsUP_CMS:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document orderable
+[SkillsUP_CMS:bannerB] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
 
-[myproject:myimageset] > hippogallery:imageset, hippogallery:relaxed
+[SkillsUP_CMS:bannerC] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[SkillsUP_CMS:bannerD] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[SkillsUP_CMS:bannerTwo] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[SkillsUP_CMS:bannerX] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[SkillsUP_CMS:bannerZ] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[SkillsUP_CMS:bannerdocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[SkillsUP_CMS:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[SkillsUP_CMS:c] > hippo:compound, hippostd:relaxed
+  orderable
+
+[SkillsUP_CMS:carousel] > SkillsUP_CMS:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[SkillsUP_CMS:carouselDoc] > SkillsUP_CMS:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[SkillsUP_CMS:carouselbanner] > hippo:compound, hippostd:relaxed
+  orderable
 

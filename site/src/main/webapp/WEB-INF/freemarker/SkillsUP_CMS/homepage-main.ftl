@@ -37,7 +37,8 @@
 <#-- 	Link top menu to the sections    -->
 <a name="1"></a>
 <div id="div_1"> Theme 1</div>
-<#include "/WEB-INF/freemarker/SkillsUP_CMS/image-slider.ftl">
+
+<#--<#include "/WEB-INF/freemarker/SkillsUP_CMS/image-slider.ftl">-->
 
 <a name="2"></a>
 <div id="div_2"> Theme 2</div>
